@@ -1,0 +1,22 @@
+لهف<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getData()">Get Information</button>
+    <div Id="data"></div>
+</body>
+     <script>
+        const getData = async () => {
+        const res = await fetch("https://api.spacexdata.com/v3/missions")
+        const result = await res.json()
+        console.log(result)
+        const text =document.getElementById("data");
+        result.forEach( item =>{
+            text.innerHTML += `<p><strong>mission_name</strong>:${item.mission_name},  <strong>mission_id</strong>:[${item.mission_id}], <a href='${item.website}'>Website</a> , <a href='${item.wikipedia}'>Wikipedia</a></p>`
+        })
+}
+    </script>
