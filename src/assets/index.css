@@ -1,0 +1,145 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+     font-family: "Roboto" , sans-serif;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+ .list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 12px;
+ }
+
+
+.alink {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.alink.btn {
+    background-color: #D8460B;
+    color: #FFFFFF;
+    border-radius: 12px;
+    padding: 12px 24px;
+}
+
+.headtag-1{
+    display: inline-block;
+    width: 73%;
+}
+.headtag-2{
+    display: inline-block;
+    width: 26%;
+    text-align: right;
+}
+.mg-top{
+    margin-top: 80px;
+}
+.slider {
+    height:480px ;
+    background-color: #F2624F;
+    border-radius: 40px;
+    background-image: url(../images/person.png) ;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    
+}
+
+.slider-content {
+    width: 572px;
+    color: #FFFFFF;
+    padding: 121px 0 0 32px;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.txt{
+    font-size:16px ;
+    margin-bottom: 24px;
+}
+
+.countries {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.country-info {
+    background-color: #F6F6F2;
+    border-radius: 36px;
+    text-align: center;
+    margin-top:12px;
+    padding: 0 6px;
+
+}
+
+.txt-2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.text{
+    width: 50%;
+    display: inline-block;
+}
+
+.notice {
+    background-color: #F9F2DB;
+    height: 192px;
+}
+.tagd-1{
+    width: 70%;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    padding-right: 100px;
+}
+.tagd-2{
+    width: 23%;
+    display: inline-block;
+    text-align: right;
+} 
+.txt-color{
+    color: #929292;
+    font-size: 16px;
+}
+.h-tag1{
+    font-size: 30px;
+}
+.h-tag2{
+    font-size: 32px;
+}
+.red{
+    color: red;
+    text-decoration: none;
+}
+.footer {
+    background-color: #F6F6F2;
+    padding: 30px 0 ;
+}
+
+.copyright {
+    font-size:18px ;
+}
