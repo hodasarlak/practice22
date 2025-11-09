@@ -1,42 +1,17 @@
+import Header from "./components/Header"
 import GetStart from "./components/GetStart";
 import Country from "./components/Country";
+import Footer from "./components/Footer"
 import { countries } from "./utils";
+
 
 const App = () => {
   return (
     <>
       <div>
-        <section className="container ">
-          <header className="header">
-       
-            <nav>
-              <ul class="list">
-                <li class="item-list">
-                  <a href="#" title="Home" class="alink">
-                    Home
-                  </a>
-                </li>
-                <li class="item-list">
-                  <a href="#" title="Countries" class="alink">
-                    Countries
-                  </a>
-                </li>
-                <li class="item-list">
-                  <a href="#" title="Duration" class="alink">
-                    Duration
-                  </a>
-                </li>
-                <li class="item-list">
-                  <a href="#" title="Examples" class="alink">
-                    Examples
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <GetStart />
-          </header>
-        </section>
-        <section class="container">
+        <Header />
+      
+        <section className="container">
           <div className="slider mg-top">
             <div className="slider-content">
               <h1 className="title">Learn Spanish Online from Native Teachers</h1>
@@ -50,10 +25,10 @@ const App = () => {
           </div>
         </section>
 
-        <section class="container">
-          <div class="mg-top">
+        <section className="container">
+          <div className="mg-top">
             <h2 h-tag1>Truly Experience Foreign Countries</h2>
-            <p class="txt-color">
+            <p className="txt-color">
               Travel around the world and meet millions of spanish speaking
               perople
             </p>
@@ -84,8 +59,8 @@ const App = () => {
         </div>
         <section className="container mg-top">
           <div>
-            <h2 class="h-tag1">How long does it take to learn Spanish?</h2>
-            <p class="txt-color">
+            <h2 className="h-tag1">How long does it take to learn Spanish?</h2>
+            <p className="txt-color">
               People often want to know how to learn Spanish fast or are looking
               for the easiest way to learn Spanish. The US Foreign Service
               Institute suggests it takes{" "}
@@ -121,7 +96,7 @@ const App = () => {
               zero to 60 in your speaking ability.
             </p>
 
-            <ul class="txt-color">
+            <ul className="txt-color">
               <li>
                 How are you?{" "}
                 <a href="#" title="click here" class="red">
@@ -145,12 +120,7 @@ const App = () => {
             </ul>
           </div>
         </section>
-
-        <footer className="footer mg-top">
-          <div class="container">
-            <p class="copyright">© 2025 Lingo - All Rights Reserved</p>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
